@@ -1,0 +1,32 @@
+{
+  "name": "signverse-attendance-tracker",
+  "version": "1.0.0",
+  "description": "A comprehensive MERN stack application for managing student attendance with role-based authentication",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend/vite-project && npm run dev",
+    "start": "cd backend && npm start",
+    "seed": "cd backend && npm run seed",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend/vite-project && npm install",
+    "build": "cd frontend/vite-project && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "attendance",
+    "tracker",
+    "student",
+    "teacher",
+    "admin"
+  ],
+  "author": "Deepika",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
+
