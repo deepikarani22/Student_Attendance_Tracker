@@ -1,10 +1,13 @@
 import express from "express";
-import { loginUser, getUserProfile, updateUserProfile } from "../controllers/userController.js";
+import { loginUser, getUserProfile, updateUserProfile, getTeachers } from "../controllers/userController.js";
 import { authenticateToken } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
 router.post("/login", loginUser);
+
+// Public route - get teachers list (safe, no passwords)
+router.get("/users/teachers", getTeachers);
 
 // Protected routes
 router.use(authenticateToken);
