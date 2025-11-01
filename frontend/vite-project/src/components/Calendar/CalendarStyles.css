@@ -1,0 +1,153 @@
+/* CalendarStyles.css 
+
+/* Root container 
+.react-calendar {
+  background: white !important;
+  border: none !important;
+  border-radius: 1rem;
+  width: 100%;
+  color: #111827; /* Tailwind gray-900 
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navigation (month/year at top) 
+.react-calendar__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.react-calendar__navigation button {
+  color: #111827 !important; /* gray-900 
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #e5e7eb; /* gray-200 hover 
+}
+
+/* Weekday labels (Mon, Tue...) 
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #111827; /* gray-900
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Day tiles 
+.react-calendar__tile {
+  color: #111827; /* gray-900 
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.react-calendar__tile:enabled:hover {
+  background: #f3f4f6; /* gray-100 
+  color: #111827;
+}
+
+/* Active (selected) day 
+.react-calendar__tile--active {
+  background: #1f2937 !important; /* gray-800 
+  color: white !important;
+}
+
+/* Other month days (faded) 
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #9ca3af !important; /* gray-400 
+}
+
+/* Current day (today) 
+.react-calendar__tile--now {
+  background: #e5e7eb !important; /* gray-200 
+  color: #111827 !important;
+  font-weight: 600;
+}*/
+
+
+/* Container*/ 
+.react-calendar-custom {
+  background-color: rgba(255, 255, 255, 0.06); /* glass background*/ 
+  color: #fff;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navigation (month/year selectors) */
+.react-calendar-custom__navigation button {
+  color: #fff;
+  min-width: 44px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 2px;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.react-calendar-custom__navigation button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Weekdays header */
+.react-calendar-custom__month-view__weekdays {
+  color: #cbd5e1; /* muted gray */
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Days */
+.react-calendar-custom__tile {
+  background: rgba(255, 255, 255, 0.06);
+  color:rgba(129, 123, 123, 0.477)
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.react-calendar-custom__tile:hover {
+  background: rgba(18, 18, 18, 0.1);
+  cursor: pointer;
+}
+
+/* Selected day */
+.react-calendar-custom__tile--active {
+  background: #1f2937; /* brand-700 */
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(2,6,23,0.45);
+}
+
+/* Today */
+.react-calendar-custom__tile--now {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+/* Month view spacing */
+.react-calendar__month-view__days__day {
+  padding: 0.75rem;
+}
+
+/* Leave date highlighting */
+.react-calendar-custom .leave-date-highlight {
+  background: rgba(249, 115, 22, 0.3) !important; /* orange-500 with opacity */
+  border: 2px solid rgba(249, 115, 22, 0.6) !important;
+  font-weight: 600;
+}
+
+.react-calendar-custom .leave-date-highlight:hover {
+  background: rgba(249, 115, 22, 0.4) !important;
+  border-color: rgba(249, 115, 22, 0.8) !important;
+}
+
+.react-calendar-custom .leave-date-highlight.react-calendar__tile--active {
+  background: rgba(249, 115, 22, 0.5) !important;
+  border-color: rgba(249, 115, 22, 0.9) !important;
+}
